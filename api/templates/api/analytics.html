@@ -1,0 +1,15 @@
+{% extends 'api/base.html' %}
+{% block title %}
+Analytics
+{% endblock %}
+{% block content %}
+{% if user.is_superuser %}
+<h1>Welcome to Analytics</h1>
+
+{% for user in user_posts %}
+<!-- show users information and number of post | only superusers can access -->
+<p>{{user.username}} has written {{user.total_posts}} posts so far <p>
+
+{% endfor %}
+    {% endif %}
+{% endblock %}

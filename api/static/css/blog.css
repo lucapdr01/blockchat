@@ -1,0 +1,177 @@
+h1 a, h2 a
+{
+   font-family: 'Brush Script MT,Courier New, Arial, helvetica, Verdana';
+}
+body {
+
+}
+div
+ {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+ }
+
+.page-header {
+     background-color: #000000 ;
+     opacity: 80%;
+     margin-top: 0;
+     padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+     color: #ffffff;
+     font-size: 36pt;
+     text-decoration: none;
+}
+
+
+
+h1, h2, h3, h4 {
+     font-family: 'Brush Script MT,Courier New, Arial, helvetica, Verdana';
+
+}
+
+.specs
+{
+color: #828282;
+}
+
+.save {
+text-align:center;
+     }
+
+  /* poost container */
+.post {
+     margin-bottom: 70px;
+     padding-right: 50px;
+     padding-left: 50px;
+     text-align : center;
+}
+  /* Post appearence */
+.msg
+{
+display:inline-block;
+background-color: #f8ff7d;
+padding: 10px;
+border-style: solid;
+border-width: 5px;
+border-radius: 25px;
+border-color: #e3bb34;
+
+}
+
+.post h2 a, .post h2 a:visited {
+     color: #000000;
+}
+  /* Form container */
+.form-container {
+   max-width: 500px;
+   display: inline-block;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+p {
+margin-top: 5px;
+}
+
+  /* Ip text */
+.ip
+{
+ position: fixed;
+  bottom: 50px;
+  width:100%;
+  text-align: center;
+  font-size: 26pt;
+  font-weight: bold;
+  color: white;
+
+
+}
+  /* New Post dynamic footer */
+.footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #f07c00;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  color: black;
+  text-align: center;
+}
+
+.footer:hover , .footer:focus-within
+{
+height:60%;
+}
+
+.footer h3
+{
+color: white;
+font-family: 'Lobster';
+font-size: 25pt;
+}
+  /* Button to LogOut */
+.logoutbt
+{
+  position: fixed;
+  right: 7px ;
+  top: 7px ;
+  text-align: center;
+   z-index: 1;
+}
+
+#bg {
+  /* The image used */
+  background-image: url("images/back-chain.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+  z-index: -1;
+}
+
+#bc {
+  /* The image used */
+  background-image: url("images/back-chat.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 90%;
+  z-index: -1;
+}
+
+
+.mybt
+{
+ position: center;
+ margin-top: 100px;
+ font-size: 18pt;
+ margin-bottom: 15px;
+}
+
+.dac {
+color: yellow;
+background-color: black;
+padding: 5px;
+border-radius: 15px;
+
+
+}

@@ -1,0 +1,37 @@
+{% extends 'api/base.html' %}
+{% block title %}
+Feed
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+ <a href="/logout"><button type="submit" class="btn btn-lg logoutbt">LogOut</button></a>
+
+       {% for post in posts %}
+                <div class="post">
+                    <div class="msg">
+                      <div>
+                        <h3>{{post.title}}</h3>
+                        <p>{{ post.content }}</p>
+                      </div>
+                      <div class="specs">
+                       <div><p>{{ post.user.username}}  {{ post.datetime }}</p></div>
+                      </div>
+                    </div>
+                </div>
+            {% endfor %}
+           {% if user.is_authenticated %}
+   <di class="footer">
+        <h3>Post</h3>
+     <div class="form-container">
+        <form method="POST" >
+            {% csrf_token %}
+         {{form|crispy}}
+        <button type="submit" class="save btn btn-primary">Post</button>
+        </form>
+     </div>
+  </di>
+
+   {%endif%}
+{% endblock %}

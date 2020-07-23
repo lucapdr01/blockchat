@@ -1,0 +1,52 @@
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+
+ {% if user.is_authenticated %}
+  <a href="/logout"><button type="submit" class="btn btn-lg logoutbt">LogOut</button></a>
+ {% endif %}
+
+   <img src="" id="bg" alt="">
+    <div class="page-header">
+        <h1><a href="/">BlockChat</a></h1>
+    </div>
+    <div>{% if messages %}
+    <ul>{% for message in messages %}
+      <li><div class="alert alert-success" role="alert">{{ message }}</div></li>
+       {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+    <div class="">
+        <div class="">
+            <div class="">
+                {% if user.is_authenticated %}
+                    {% block content %}
+
+                    {% endblock %}
+                 <a href="/post_list"><button type="submit" class="btn btn-lg mybt">Feed</button></a>
+                 {% if user.is_superuser %}
+                <p></p>
+                <a href="/analytics"><button type="submit" class="btn btn-lg mybt">Analytics</button></a>
+                {% endif %}
+                <p class="ip"> IP: {{ ip_stat }}</p>
+                {% else %}
+
+                <a href="/login"><button type="submit" class="btn btn-lg mybt">Login Here</button></a>
+                <p><a href="/register" class="dac">Don't have an account? Create one here</a> </p>
+                {%endif%}
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
