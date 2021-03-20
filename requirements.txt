@@ -23,7 +23,7 @@ hexbytes==0.2.1
 idna==2.10
 ipfshttpclient==0.6.0.post1
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jsonschema==3.2.0
 legacy==0.1.6
 lru-dict==1.1.6
