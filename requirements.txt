@@ -36,7 +36,7 @@ pycryptodome==3.9.8
 pypiwin32==223
 pyrsistent==0.16.0
 pytz==2020.1
-pywin32==228
+pywin32==301
 requests==2.24.0
 rlp==1.2.0
 six==1.15.0
